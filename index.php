@@ -62,7 +62,7 @@ require('connect.php');
 $result = $conn->query("select * from mytable");
 
 
-$sql = "SELECT * from bookdetails;  ";
+$sql = "SELECT * from Bookdetails;  ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0)
  
