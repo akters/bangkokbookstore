@@ -11,7 +11,7 @@
 
 <style>
 table, th, td {
-  border: 2px solid black;
+  border: 2px solid white;
   border-spacing: 1px;
   }
   th, td {
@@ -22,7 +22,7 @@ th {
 }
 table{
   width: 80%;    
-  background-color: white ;
+  background-color: Grey ;
   
 }
 table {
@@ -70,8 +70,8 @@ if ($result->num_rows > 0)
 echo '<div class="tab-content">';
 echo '<div id="book" class="tab-pane fade in active">';
 echo '<table table-hover class="centerTable">';
-echo '<tr bgcolor=#00FFFF style="color:#00006a">
-<h2 style="color:Black"; align="center" class="w3-myfont">Recipe</h2>
+echo '<tr bgcolor=#111112 style="color:#ffffff">
+<h2 style="color:Black"; align="center" class="w3-myfont">Book Details</h2>
 <br/>
 <th>Title</th>
 <th>Author</th>
