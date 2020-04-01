@@ -1,108 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bangkok Bookstore</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-
-<style>
-table, th, td {
-  border: 2px solid white;
-  border-spacing: 1px;
-  }
-  th, td {
-  padding: 5px;
-}
-th {
-  text-align: left;
-}
-table{
-  width: 80%;    
-  background-color: Grey ;
-  
-}
-table {
-  border-spacing: 2px;
-}
-</style>
-</head>
-
-<body>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Bangkok Bookstore</a>
-    </div>
-    <ul class="nav navbar-nav">
-      
-      
-      <li class="active"><a href="#"><b>Home</b></a></li>
-      <li class="active"><a href="#"><b>About</b></a></li>
-      <li class="active"><a href="#"><b>Book</b></a></li>
-      <li class="active"><a href="#"><b>Author</b></a></li>
-      <li class="active"><a href="#"><b>Genre</b></a></li>
-      <li class="active"><a href="#"><b>Contact Us</b></a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <h1><center><b>Book Details</b></center></h1>
-
-</div>
 <?php
-
-require('connect.php');
-
-$result = $conn->query("select * from mytable");
-
-
-$sql = "SELECT * from Bookdetails;  ";
-$result = $conn->query($sql);
-if ($result->num_rows > 0)
- 
-{
-echo '<div class="tab-content">';
-echo '<div id="book" class="tab-pane fade in active">';
-echo '<table table-hover class="centerTable">';
-echo '<tr bgcolor=#111112 style="color:#ffffff">
-<h2 style="color:Black"; align="center" class="w3-myfont">Book Details</h2>
-<br/>
-<th>Title</th>
-<th>Author</th>
-<th>ISBN</th>
-<th>Barcode</th>
-<th>Shelf</th>
-</tr>';
-
-
-// output data of each row
-
-    while($row = $result->fetch_assoc())
- {
-
-echo "<tr>
-<td>" . $row["Title"]. "</td>
-<td>" . $row["Author"]. "</td>
-<td>" . $row["ISBN"]. "</td>
-<td>" . $row["Barcode"]. "</td>
-<td>" . $row["Shelf"]. "</td>
-</tr>";
-
-    }
- echo "</table>";
-} else {
-    echo "0 results";
-}  
-$conn->close();
+echo "<!DOCTYPE html>\n";
+echo "<html lang=\"en\">\n";
+echo "<head>\n";
+echo " <meta charset=\"utf-8\">\n";
+echo "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n";
+echo "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n";
+echo "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n";
+echo "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\n";
+echo "</head>\n";
+echo "<body>\n";
+echo "\n";
+echo "\n";
+echo "<nav class=\"navbar navbar-inverse\">\n";
+echo "  <div class=\"container-fluid\">\n";
+echo "    <div class=\"navbar-header\">\n";
+echo "      <a class=\"navbar-brand\" href=\"#\">Book Store</a>\n";
+echo "    </div>\n";
+echo "    <ul class=\"nav navbar-nav\">\n";
+echo "      <li><a href=\"#\">Home</a></li>\n";
+echo "      <li><a href=\"#\">About</a></li>\n";
+echo "      <li><a href=\"#\">Book</a></li>\n";
+echo "      <li class=\"active\"><a href=\"#\">Author</a></li>\n";
+echo "      <li><a href=\"#\">Genre</a></li>\n";
+echo "       <li><a href=\"#\">Contact Us</a></li>\n";
+echo "    </ul>\n";
+echo "  </div>\n";
+echo "</nav>\n";
+echo "  <style>\n";
+echo ".center {\n";
+echo "  text-align: center;\n";
+echo "  border: 3px solid black;\n";
+echo "}\n";
+echo "</style>\n";
+echo "     <div class=\"center\">\n";
+echo "  <h2>Author</h2>\n";
+echo "</div>\n";
+echo "\n";
+echo "</table>\n";
+echo "<div class=\"container\">\n";
+echo "<h4>Select a letter </h4>\n";
+echo " <div id=\"nav\" class=\"CharacterContainer\"></div>\n";
+echo "  <table class=\"table table-bordered\">\n";
+echo " \n";
+echo " <div class=\"container\">\n";
+echo "  <div class=\"btn-toolbar\">\n";
+echo "    <div class=\"btn-group btn-group-black\">\n";
+echo "      <button class=\"btn btn-default\">A</button>\n";
+echo "      <button class=\"btn btn-default\">B</button>\n";
+echo "      <button class=\"btn btn-default\">C</button>\n";
+echo "      <button class=\"btn btn-default\">D</button>\n";
+echo "      <button class=\"btn btn-default\">E</button>\n";
+echo "      <button class=\"btn btn-default\">F</button>\n";
+echo "      <button class=\"btn btn-default\">G</button>\n";
+echo "      <button class=\"btn btn-default\">H</button>\n";
+echo "      <button class=\"btn btn-default\">I</button>\n";
+echo "      <button class=\"btn btn-default\">J</button>\n";
+echo "      <button class=\"btn btn-default\">K</button>\n";
+echo "      <button class=\"btn btn-default\">L</button>\n";
+echo "      <button class=\"btn btn-default\">M</button>\n";
+echo "      <button class=\"btn btn-default\">N</button>\n";
+echo "      <button class=\"btn btn-default\">O</button>\n";
+echo "      <button class=\"btn btn-default\">P</button>\n";
+echo "      <button class=\"btn btn-default\">Q</button>\n";
+echo "      <button class=\"btn btn-default\">R</button>\n";
+echo "      <button class=\"btn btn-default\">S</button>\n";
+echo "      <button class=\"btn btn-default\">T</button>\n";
+echo "      <button class=\"btn btn-default\">U</button>\n";
+echo "      <button class=\"btn btn-default\">V</button>\n";
+echo "      <button class=\"btn btn-default\">W</button>\n";
+echo "      <button class=\"btn btn-default\">X</button>\n";
+echo "      <button class=\"btn btn-default\">Y</button>\n";
+echo "      <button class=\"btn btn-default\">Z</button>\n";
+echo "    </div>\n";
+echo "   \n";
+echo "   \n";
+echo "  <thead>\n";
+echo "  <tr>\n";
+echo "  <th>Author</th>\n";
+echo "    <th>Title</th>\n";
+echo "      <th>Details</th>\n";
+echo "         </tr>\n";
+echo "    </thead>\n";
+echo "    <tbody>\n";
+echo "      <tr>\n";
+echo "        <td>Aristotle</td>\n";
+echo "        <td> Organon</td>\n";
+echo "        <td>Click here</td>\n";
+echo "        </tr>\n";
+echo "         <tr>\n";
+echo "        <td>Arthur Conan Doyle</td>\n";
+echo "        <td>Sherlock Holmes</td>\n";
+echo "        <td>Clich here</td>\n";
+echo "        </tr>\n";
+echo "         <tr>\n";
+echo "        <td>Arthur Conan Doyle</td>\n";
+echo "        <td> The Napoleonic Tales</td>\n";
+echo "        <td>Click here</td>\n";
+echo "        </tr>\n";
+echo "          <tr>\n";
+echo "        <td>Arthur Conan Doyle</td>\n";
+echo "        <td> The Professor Challenger works</td>\n";
+echo "        <td>Click here</td>\n";
+echo "        </tr>\n";
+echo "          <tr>\n";
+echo "        <td>Arthur Conan Doyle</td>\n";
+echo "        <td> The Mystery of Cloomber</td>\n";
+echo "        <td>Click here</td>\n";
+echo "        </tr>\n";
+echo "          <tr>\n";
+echo "        <td>Arthur Conan Doyle</td>\n";
+echo "        <td>Micah Clarke</td>\n";
+echo "        <td>Click here</td>\n";
+echo "        </tr>\n";
+echo "    </tbody>\n";
+echo "  </table>\n";
+echo "\n";
+echo "\n";
+echo " \n";
+echo "    </tbody>\n";
+echo "\n";
+echo "  </table>\n";
+echo "</div>\n";
+echo "\n";
+echo "</body>\n";
+echo "</html>\n";
 ?>
-</body>
-</html>
-
-</body>
-</html>
