@@ -52,30 +52,30 @@
   <form action="Letting_User_Insert_Value.php" method= "POST">
     <div class="row">
       <div class="col-25">
-        <label for="Title">Title</label>
+        <label for="Sug_Title">Title</label>
       </div>
       <div class="col-75">
-        <input type="text" id="Title" name="Title" placeholder="Book Title..">
+        <input type="text" id="Sug_Title" name="Sug_Title" placeholder="Book Title..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="Author">Author</label>
+        <label for="Sug_Author">Author</label>
       </div>
       <div class="col-75">
-        <input type="text" id="Author" name="Author" placeholder="Author's name..">
+        <input type="text" id="Sug_Author" name="Sug_Author" placeholder="Author's name..">
       </div>
     </div>
      <div class="row">
       <div class="col-25">
-        <label for="ISBN">ISBN</label>
+        <label for="Sug_ISBN">ISBN</label>
       </div>
       <div class="col-75">
-        <input type="Number" id="ISBN" name="ISBN" placeholder="ISBN number..">
+        <input type="Number" id="Sug_ISBN" name="Sug_ISBN" placeholder="ISBN number..">
       </div>
     </div>
 
-<select name="Type_Num">
+<select name="Sug_Type_Num">
 <option>- Select a genre .. -</option>
 <option value="11">Gothic Fiction</option>
 <option value="16">Historical Fiction</option>
