@@ -74,7 +74,7 @@
         <input type="Number" id="Sug_ISBN" name="Sug_ISBN" placeholder="ISBN number..">
       </div>
     </div>
-<select name="Sug_Type_Num">
+<select name="Sug_Type_num">
 <option>- Select a genre .. -</option>
 <option value="11">Gothic Fiction</option>
 <option value="16">Historical Fiction</option>
