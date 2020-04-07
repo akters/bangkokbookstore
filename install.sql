@@ -42,6 +42,7 @@ CREATE TABLE Book_Suggestion
   Sug_Author VARCHAR(30) NOT NULL,
   Sug_ISBN INT NOT NULL, 
   Sug_Type_num INT NOT NULL,
+  Req_num INT NOT NULL,
   PRIMARY KEY (Req_num)
  );
  
@@ -50,4 +51,4 @@ insert into Book_type values (16);
 insert into Inventory values (15, 32, 62, "2G");
 insert into Book values ("Oliver Twist","Charles Dickens","1792739478", "1792739478218",32, 16, "2G");
 insert into Book_type_Description values ("crime and poverty","thegreatestbooks.org/items/2371",32);
-insert into Book values ("A Wrinkle in Time","Madeleine L'Engel","9066710972",32);
+insert into Book values ("A Wrinkle in Time","Madeleine L'Engel","9066710972",32, 150);
