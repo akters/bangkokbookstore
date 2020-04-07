@@ -74,7 +74,6 @@
         <input type="Number" id="Sug_ISBN" name="Sug_ISBN" placeholder="ISBN number..">
       </div>
     </div>
-
 <select name="Sug_Type_Num">
 <option>- Select a genre .. -</option>
 <option value="11">Gothic Fiction</option>
@@ -83,6 +82,15 @@
 <option value="32">Biography</option>
 <option value="47">Novel</option>
 </select>
+     <div class="row">
+      <div class="col-25">
+        <label for="Sug_Req_num">Request No.</label>
+      </div>
+      <div class="col-75">
+        <input type="Number" id="Sug_Req_num" name="Sug_Req_num" placeholder="Request number..">
+      </div>
+    </div>
+    
     <div class="row">
       <input type="submit" value="Add">
     </div>
