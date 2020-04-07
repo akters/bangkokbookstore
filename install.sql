@@ -49,6 +49,6 @@ CREATE TABLE Book_Suggestion
 
 insert into Book_type values (16);
 insert into Inventory values (15, 32, 62, "5A");
-insert into Book values ("Jane Eyre","Charlotte Bronte","1792739478", "1792739478218",32, 16, "2G");
-insert into Book_type_Description values ("life story of an orphan","thegreatestbooks.org/items/107",32);
+insert into Book values ("Jane Eyre","Charlotte Bronte","1792739478", "1792739478218",32, 16, "5A");
+insert into Book_type_Description values ("life story of an orphan","thegreatestbooks.org/items/107",16);
 insert into Book_Suggestion values ("Harry Potter","JK Rowling","9066710972", 32, 150);
