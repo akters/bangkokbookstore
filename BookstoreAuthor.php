@@ -91,7 +91,7 @@
     </thead>
     <tbody>
       <tr>
-        <td> <a href=\"https://schoolworkhelper.net/oliver-twist-characters-setting-style-audience-and-diction/">Aristotle  </a> </td>
+        <td>Aristotle</td>
         <td>Organon</td>
         <td>Click here</td>
       
