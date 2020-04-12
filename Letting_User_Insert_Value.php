@@ -1,15 +1,17 @@
 <?php
 
-$Sug_Title = $_POST['Sug_Title'];
-$Sug_Author = $_POST['Sug_Author'];
-$Sug_ISBN = $_POST['Sug_ISBN'];
-$Sug_Type_num = $_POST['Sug_Type_num'];
-$Sug_Req_num = $_POST['Sug_Req_num'];
+$Title = $_POST['Title'];
+$Author = $_POST['Author'];
+$ISBN = $_POST['ISBN'];
+$Barcode = $_POST['Barcode'];
+$Book_Copy_Num = $_POST['Book_Copy_Num'];
+$Type_num = $_POST['Type_num'];
+$Shelf_num = $_POST['Shelf_num'];
 
 require('connect.php');
-$result = $conn->query("select * from Book_Suggestion");
+$result = $conn->query("select * from Book");
 
-$sql = "insert into Book_Suggestion values('$Sug_Title', '$Sug_Author', '$Sug_ISBN', '$Sug_Type_num', '$Sug_Req_num');";
+$sql = "insert into Book values('$Title', '$Author', '$ISBN','$Barcode' '$Book_Copy_Num', '$Type_num'), '$Shelf_num';";
 $result = $conn->query($sql);
 
 ?>
