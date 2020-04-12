@@ -56,6 +56,7 @@
         <input type="text" id="Title" name="Title" placeholder="Book Title..">
       </div>
     </div>
+    
     <div class="row">
       <div class="col-25">
         <label for="Author">Author</label>
@@ -64,6 +65,7 @@
         <input type="text" id="Author" name="Author" placeholder="Author's name..">
       </div>
     </div>
+    
      <div class="row">
       <div class="col-25">
         <label for="ISBN">ISBN</label>
@@ -82,6 +84,14 @@
       </div>
     </div>
     
+      <div class="row">
+      <div class="col-25">
+        <label for="Book_Copy_Num">Book Copies</label>
+      </div>
+      <div class="col-75">
+        <input type="Number" id="Book_Copy_Num" name="Book_Copy_Num" placeholder="How many copies?..">
+      </div>
+    </div> 
     
 <select name="Type_num">
 <option>- Select a genre .. -</option>
@@ -92,6 +102,7 @@
 <option value="47">Novel</option>
 </select>
 
+
     <div class="row">
       <div class="col-25">
         <label for="Shelf_num">Shelf Number</label>
@@ -99,7 +110,8 @@
       <div class="col-75">
         <input type="text" id="Shelf_num" name="Shelf_num" placeholder="Shelf number..">
       </div>
-    </div>   
+    </div>
+    
     
     <div class="row">
       <input type="submit" value="Add">
