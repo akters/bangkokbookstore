@@ -23,7 +23,7 @@
        <li><a href="#">Contact Us</a></li>
      
       <form name ="form1" action="" method="post">
-      <input type ="submit" name ="Suggest_Book" value ="Suggest Book">
+      <input type ="submit" name ="Add_Book.php" value ="Add Book">
       </form>
       
       <form action="/action_page.php">
