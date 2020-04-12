@@ -23,7 +23,7 @@
        <li><a href="#">Contact Us</a></li>
      
       <form name ="form1" action="" method="post">
-      <input type ="submit" name ="Suggest_Book" value ="Suggest Book">
+      <input type ="submit" name ="Add_Book.php" value ="Add Book">
       </form>
       
       <form action="/action_page.php">
@@ -41,40 +41,49 @@
 }
 </style>
      <div class="center">
-  <h2>Suggest Book</h2>
+  <h2>Add Book</h2>
 </div>
 </table>
 <div class="container">
-<h4> Suggest a book you would like to see in future: </h4>
-
-
+<h4> Add a book you would like to see in the bookstore: </h4>
 <div class="container">
   <form action="Letting_User_Insert_Value.php" method= "POST">
     <div class="row">
       <div class="col-25">
-        <label for="Sug_Title">Title</label>
+        <label for="Title">Title</label>
       </div>
       <div class="col-75">
-        <input type="text" id="Sug_Title" name="Sug_Title" placeholder="Book Title..">
+        <input type="text" id="Title" name="Title" placeholder="Book Title..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="Sug_Author">Author</label>
+        <label for="Author">Author</label>
       </div>
       <div class="col-75">
-        <input type="text" id="Sug_Author" name="Sug_Author" placeholder="Author's name..">
+        <input type="text" id="Author" name="Author" placeholder="Author's name..">
       </div>
     </div>
      <div class="row">
       <div class="col-25">
-        <label for="Sug_ISBN">ISBN</label>
+        <label for="ISBN">ISBN</label>
       </div>
       <div class="col-75">
-        <input type="Number" id="Sug_ISBN" name="Sug_ISBN" placeholder="ISBN number..">
+        <input type="Number" id="ISBN" name="ISBN" placeholder="ISBN number..">
+      </div>
+    </div>  
+  
+     <div class="row">
+      <div class="col-25">
+        <label for="Barcode">Barcode</label>
+      </div>
+      <div class="col-75">
+        <input type="Number" id="Barcode" name="Barcode" placeholder="Barcode number..">
       </div>
     </div>
-<select name="Sug_Type_num">
+    
+    
+<select name="Type_num">
 <option>- Select a genre .. -</option>
 <option value="11">Gothic Fiction</option>
 <option value="16">Historical Fiction</option>
@@ -82,14 +91,15 @@
 <option value="32">Biography</option>
 <option value="47">Novel</option>
 </select>
-     <div class="row">
+
+    <div class="row">
       <div class="col-25">
-        <label for="Sug_Req_num">Request No.</label>
+        <label for="Shelf_num">Shelf Number</label>
       </div>
       <div class="col-75">
-        <input type="Number" id="Sug_Req_num" name="Sug_Req_num" placeholder="Request number..">
+        <input type="text" id="Shelf_num" name="Shelf_num" placeholder="Shelf number..">
       </div>
-    </div>
+    </div>   
     
     <div class="row">
       <input type="submit" value="Add">
