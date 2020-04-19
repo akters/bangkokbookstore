@@ -18,8 +18,8 @@ CREATE TABLE Inventory
 
 CREATE TABLE Book
 (
-  Author VARCHAR(30) NOT NULL,
   Title VARCHAR(30) NOT NULL,
+  Author VARCHAR(30) NOT NULL,
   Barcode VARCHAR(30) NOT NULL,
   ISBN VARCHAR(30) NOT NULL,
   Book_copy_num INT NOT NULL,
@@ -32,4 +32,4 @@ CREATE TABLE Book
 
 insert into Book_type values (16, "Classical Novel", "thegreatestbooks.org/items/107");
 insert into Inventory values (12, 100, 3027, "5A", 316);
-insert into Book values ("Charlotte Bronte", "Jane Eyre", 218385809551, 2183858, 316, 16, "5A");
+insert into Book values ("Jane Eyre", "Charlotte Bronte", 218385809551, 2183858, 316, 16, "5A");
