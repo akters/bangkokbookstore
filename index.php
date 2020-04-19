@@ -60,9 +60,9 @@ $result = $conn->query("select * from Book");
   <td><strong><font color=navy><u>Author</strong></u></font></td>
   <td><strong><font color=navy><u>ISBN</strong></u></font></td>
   <td><strong><font color=navy><u>Barcode</strong></u></font></td>
-  <td><strong><font color=navy><u>Book_Copy_Num</strong></u></font></td>
-  <td><strong><font color=navy><u>Type_Num</strong></u></font></td>
-  <td><strong><font color=navy><u>Shelf_Num</strong></u></font></td>
+  <td><strong><font color=navy><u>Book_copy_num</strong></u></font></td>
+  <td><strong><font color=navy><u>Type_num</strong></u></font></td>
+  <td><strong><font color=navy><u>Shelf_num</strong></u></font></td>
 </tr>
 
 <?php
@@ -82,9 +82,9 @@ if ($result->num_rows > 0) {
     <td>{$row['Author']}</td>
     <td>{$row['ISBN']}</td>
     <td>{$row['Barcode']}</td>
-    <td>{$row['Book_Copy_Num']}</td>
-    <td>{$row['Type_Num']}</td>
-    <td>{$row['Shelf_Num']}</td>
+    <td>{$row['Book_copy_num']}</td>
+    <td>{$row['Type_num']}</td>
+    <td>{$row['Shelf_num']}</td>
 </tr>\n";
     }
 } else {
@@ -95,3 +95,4 @@ $conn->close();
 
 </body>
 </http>
+
