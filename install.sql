@@ -20,8 +20,8 @@ CREATE TABLE Book
 (
   Title VARCHAR(30) NOT NULL,
   Author VARCHAR(30) NOT NULL,
-  Barcode VARCHAR(30) NOT NULL,
   ISBN VARCHAR(30) NOT NULL,
+  Barcode VARCHAR(30) NOT NULL,
   Book_copy_num INT NOT NULL,
   Type_num INT NOT NULL,
   Shelf_num VARCHAR(30) NOT NULL,
