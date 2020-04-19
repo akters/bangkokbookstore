@@ -11,7 +11,7 @@ $Shelf_num = $_POST['Shelf_num'];
 require('connect.php');
 $result = $conn->query("select * from Book");
 
-$sql = "insert into Book values('$Title', '$Author', '$ISBN','$Barcode' '$Book_Copy_Num', '$Type_num'), '$Shelf_num';";
+$sql = "insert into Book values('$Title', '$Author', '$ISBN','$Barcode' '$Book_Copy_Num', '$Type_num', '$Shelf_num');";
 $result = $conn->query($sql);
 
 ?>
