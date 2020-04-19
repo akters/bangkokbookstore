@@ -20,7 +20,7 @@
       <li><a href="BookstoreAuthor.php">Author</a></li>
       <li><a href="BookstoreGenre.php">Genre</a></li>
       <li><a href="https://drive.google.com/file/d/1DQXZCknmbRYo3j5hrfzwQdBJMe5H9781/view?usp=sharing"></i>HELP</a></li>
-       <li><a href="#">Contact Us</a></li>
+      <li><a href="BookstoreContactus.php"Contact Us</a></li>
      
       <form name ="form1" action="" method="post">
       <input type ="submit" name ="Add_Book.php" value ="Add Book">
