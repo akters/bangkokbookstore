@@ -30,6 +30,6 @@ CREATE TABLE Book
   FOREIGN KEY (Shelf_num) REFERENCES Inventory(Shelf_num)
 );
 
-insert into Book_type values (16, "Classical Novel", "thegreatestbooks.org/items/107");
-insert into Inventory values (12, 100, 3027, "5A", 316);
-insert into Book values ("Jane Eyre", "Charlotte Bronte", 218385809551, 2183858, 316, 16, "5A");
+insert into Book_type values (16, "Classical Novel", "thegreatestbooks.org/items/107"), (23, "Thriller", "thegreatestbooks.org/items/54");
+insert into Inventory values (12, 100, 3027, "5A", 316),(20, 350, 782, "3B", 524);
+insert into Book values ("Jane Eyre", "Charlotte Bronte", 218385809551, 2183858, 316, 16, "5A"),("Frankenstein", "Mary Shelly",685664223509, 6856642, 524, 23, "3B");
