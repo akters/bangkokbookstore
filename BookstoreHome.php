@@ -20,7 +20,8 @@
       <li><a href="BookstoreAuthor.php">Author</a></li>
       <li><a href="BookstoreGenre.php">Genre</a></li>
       <li><a href="https://drive.google.com/file/d/1DQXZCknmbRYo3j5hrfzwQdBJMe5H9781/view?usp=sharing"></i>HELP</a></li>
-      <li><a href="BookstoreContactus.php"Contact Us</a></li>
+
+      <li><a href="BookstoreContactus.php">Contact Us</a></li>
      
       <form name ="form1" action="" method="post">
       <input type ="submit" name ="Add_Book.php" value ="Add Book">
@@ -44,8 +45,13 @@
   <h2>Home</h2>
 </div>
 </table>
+<br>
 <div class="container">
-<h4>Welcome to Bangkok Bookstore!</h4>
+<h3><center>Welcome to Bangkok Bookstore!</center></h3>
+<br>
+<center><img src="https://woollymag.com/wp-content/uploads/2018/08/books-1200x880.png" width="300" height="300"></center>
+<br>
+<h4><center>There is the perfect place for minds that travel faster than their feet. We have a wide collection of books for you to pick from. Start exploring!</center></h4>
 
 </div>
 </body>
