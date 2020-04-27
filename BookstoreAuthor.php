@@ -48,7 +48,6 @@
 <h4>Select a letter </h4>
  <div id="nav" class="CharacterContainer"></div>
   <table class="table table-bordered">
-
  <div class="container">
   <div class="btn-toolbar">
     <div class="btn-group btn-group-black">
@@ -80,53 +79,40 @@
       <a href=\"https://www.bookbrowse.com/authors/allauthors/index.cfm/fuseaction/long_view/author_last_name_starts_with/y"><button>Y</button></a> 
       <a href=\"https://www.bookbrowse.com/authors/allauthors/index.cfm/fuseaction/long_view/author_last_name_starts_with/z"><button>Z</button></a> 
       </div> 
-      
-      
-  <thead>
-  <tr>
-  <th>Author</th>
-    <th>Title</th>
-      <th>Details</th>
-         </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Aristotle</td>
-        <td>Organon</td>
-        <td>Click here</td>
-      
-        </tr>
-        <tr>
-        <td>Arthur Conan Doyle</td>
-        <td>Sherlock Holmes</td>
-        <td>Clich here</td>
-        </tr>
-         <tr>
-        <td>Arthur Conan Doyle</td>
-        <td> The Napoleonic Tales</td>
-        <td>Click here</td>
-        </tr>
-          <tr>
-        <td>Arthur Conan Doyle</td>
-        <td> The Professor Challenger works</td>
-        <td>Click here</td>
-        </tr>
-          <tr>
-        <td>Arthur Conan Doyle</td>
-        <td> The Mystery of Cloomber</td>
-        <td>Click here</td>
-        </tr>
-          <tr>
-        <td>Arthur Conan Doyle</td>
-        <td>Micah Clarke</td>
-        <td>Click here</td>
-        </tr>
-    </tbody>
-  </table>
- 
-    </tbody>
-  </table>
-</div>
-</body>
-</html>
 
+<?php
+require('connect.php');
+$result = $conn->query("select * from Book");
+?>
+
+<table border="2" align="center">
+<tr>
+  <td><strong><font color=navy><u>Author</strong></u></font></td>
+  <td><strong><font color=navy><u>Title</strong></u></font></td>
+</tr>
+
+<?php
+var_dump($_POST);
+   ?> 
+
+<?php
+$sql = "SELECT * from Book";
+$result = $conn->query($sql);
+$return_arr = array();
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      echo 
+"<tr>
+    <td>{$row['Author']}</td>
+    <td>{$row['Title']}</td>
+</tr>\n";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
+
+</body>
+</http>
