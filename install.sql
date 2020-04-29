@@ -25,7 +25,7 @@ CREATE TABLE Book
   Book_copy_num INT NOT NULL,
   Type_num INT NOT NULL,
   Shelf_num VARCHAR(30) NOT NULL,
-  PRIMARY KEY (Book_copy_num),
+  PRIMARY KEY (ISBN),
   FOREIGN KEY (Type_num) REFERENCES Book_type(Type_num),
   FOREIGN KEY (Shelf_num) REFERENCES Inventory(Shelf_num)
 );
