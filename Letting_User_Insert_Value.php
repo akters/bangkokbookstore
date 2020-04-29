@@ -15,3 +15,4 @@ $sql = "insert into Book values('$Title', '$Author', '$ISBN','$Barcode' '$Book_C
 $result = $conn->query($sql);
 
 ?>
+
